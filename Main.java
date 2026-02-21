@@ -44,6 +44,12 @@ public class Main {
     }
 
     // Task 1: Inventory Display
+    
+
+        
+    }
+
+    // Inventory Display
     public static void printInventory(String[] names, double[] prices, int[] stocks) {
         for (int i = 0; i < names.length; i++) {
             if (names[i] != null) { // only print slots that aren't empty
@@ -53,6 +59,7 @@ public class Main {
     }
 
     // Task 2: Restock & Search
+    //Restock & Search
     public static void restockItem(String[] names, int[] stocks, String target, int amount) {
         boolean found = false;
 
