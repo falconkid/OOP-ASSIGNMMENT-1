@@ -1,9 +1,21 @@
 import java.util.Scanner;
 
+/**
+ * Main class for managing a simple inventory system using parallel arrays.
+ * Allows viewing inventory, restocking items, and exiting the program.
+ */
+
 public class Main {
 
+    /**
+     * The entry point of the program.
+     * Displays a menu for the user to interact with the inventory.
+     *
+     * @param args command line arguments (not used)
+     */
+
     public static void main(String[] args) {
-        // Parallel arrays1
+        
 
         String[] itemNames = new String[10];
         double[] itemPrices = new double[10];
@@ -44,13 +56,22 @@ public class Main {
     
     
 
-    // Task 1: Inventory Display
+    
     
 
         
     }
 
-    // Inventory Display
+    
+     /**
+     * Prints the current inventory to the console.
+     * Only prints items that are not null.
+     *
+     * @param names  array of item names
+     * @param prices array of item prices corresponding to names
+     * @param stocks array of item stock quantities corresponding to names
+     */
+
     public static void printInventory(String[] names, double[] prices, int[] stocks) {
         for (int i = 0; i < names.length; i++) {
             if (names[i] != null) { // only print slots that aren't empty
@@ -61,6 +82,17 @@ public class Main {
 
     // Task 2: Restock & Search
     //Restock & Search
+
+    /**
+     * Restocks a specific item in the inventory by a given amount.
+     * If the item is not found, prints "Item not found."
+     *
+     * @param names  array of item names
+     * @param stocks array of item stock quantities corresponding to names
+     * @param target the name of the item to restock
+     * @param amount the quantity to add to the item's stock
+     */
+    
     public static void restockItem(String[] names, int[] stocks, String target, int amount) {
         boolean found = false;
 
