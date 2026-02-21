@@ -42,6 +42,7 @@ public class Main {
             }
         }
     
+    
 
     // Task 1: Inventory Display
     
